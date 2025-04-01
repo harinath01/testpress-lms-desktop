@@ -1,6 +1,6 @@
 {
   "name": "testpress-lms-viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": ", enabling native access to the learning platform with enhanced performance and security features.",
   "main": "main.js",
   "scripts": {
