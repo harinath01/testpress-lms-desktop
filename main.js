@@ -15,6 +15,14 @@ function createWindow() {
         }
     });
 
+    // Enable content protection to prevent screenshots and screen recording
+    mainWindow.setContentProtection(true);
+
+    // Prevent saving page as HTML
+    mainWindow.webContents.on('context-menu', (e, params) => {
+        e.preventDefault();
+    });
+
     // Set content security policy
     session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
         callback({
