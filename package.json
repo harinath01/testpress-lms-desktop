@@ -1,0 +1,31 @@
+{
+  "name": "testpress-lms-viewer",
+  "version": "1.0.0",
+  "description": ", enabling native access to the learning platform with enhanced performance and security features.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "testpress",
+    "lms",
+    "desktop-app",
+    "education",
+    "e-learning",
+    "cross-platform"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^latest",
+    "electron-builder": "^latest"
+  },
+  "build": {
+    "appId": "com.testpress.lmsviewer",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
